@@ -10,12 +10,23 @@
   %border: 10px solid currentcolor;
 }
 
-.image-div{
-  float:left;
-  margin-right:10px;
-  max-width: 20%;
-  max-height: 20%;
+* {
+  box-sizing: border-box;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	
 
 </style>
 </head>
@@ -29,14 +40,17 @@
 	<h3>1. Thuê bao trả trước:</h3>
 </div>
 
-<p>Giao dịch thành công, màn hình hiển thị mã thẻ và số seri.</p>
-  	<div>
-    	<img src ="mt/mt-viettel1.PNG" width="400" height="600">
-  	</div>
- <p>Chọn Nạp ngay:</p>
-  	<div>
-    	<img src ="mt/mt-viettel2.PNG" width="400" height="600">
-  	</div>
+<div class="row">
+	<div class="column">
+		<p>Giao dịch thành công, màn hình hiển thị mã thẻ và số seri.</p>
+		<img src="mt/mt-viettel1.PNG" alt="Snow" style="width:100%">
+	</div>
+	<div class="column">
+		<p>Chọn Nạp ngay:</p>
+		<img src="mt/mt-viettel2.PNG" alt="Forest" style="width:100%">
+	</div>
+</div>
+ 
  <p> Chọn <b>Sao chép cú pháp nạp thẻ trả trước *100*mã thẻ#</b>:</p>
 	<div>
     	<img src ="mt/mt-viettel3.PNG" width="400" height="600">
