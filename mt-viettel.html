@@ -9,6 +9,10 @@
   color: #FF69B4;
 }
 
+#HEAD1 {
+  color: #FF69B4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +30,7 @@
   display: table;
 }
 	
-/* Sidebar */
+/* Sidebar 
 .sidenav {
   width: 130px;
   position: fixed;
@@ -51,30 +55,56 @@
 }
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-left: 140px; 
+  font-size: 28px; 
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}*/
+
+#navbar {
+  background-color: #eee;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #FF69B4;
+  text-align: left;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 </style>
 </head>
 <body>
 
-<div class="sidenav">
-		<a href="#tratruoc">1. Thuê bao trả trước</a>
-		<a href="#trasau">2. Thuê bao trả sau</a>
-		<a href="#guithe">3. Gửi thông tin thẻ nạp cho người thân, bạn bè</a>
-		<a href="#copy">4. Sao chép thông tin thẻ nạp</a>
-</div>
 
 <div class="main">
 <div id="HEAD">
 	<center><h2>Hướng dẫn sử dụng mã thẻ Điện thoại Viettel</h2></center>
+</div>
+
+
+<div class="navbar">
+	<a href="#tratruoc">1. Thuê bao trả trước</a>
+	<a href="#trasau">2. Thuê bao trả sau</a>
+	<a href="#guithe">3. Gửi thông tin thẻ nạp cho người thân, bạn bè</a>
+	<a href="#copy">4. Sao chép thông tin thẻ nạp</a>
 </div>
 
 <div id="HEAD">
