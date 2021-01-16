@@ -7,7 +7,6 @@
 <style>
 #HEAD {
   color: #FF69B4;
-  %border: 10px solid currentcolor;
 }
 
 * {
@@ -27,136 +26,190 @@
   display: table;
 }
 	
+/* Sidebar */
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:  #FF69B4;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 </style>
 </head>
 <body>
 
+<div class="sidenav">
+		<a href="#tratruoc">1. Thuê bao trả trước</a>
+		<a href="#trasau">2. Thuê bao trả sau</a>
+		<a href="#guithe">3. Gửi thông tin thẻ nạp cho người thân, bạn bè</a>
+		<a href="#copy">4. Sao chép thông tin thẻ nạp</a>
+</div>
+
+<div class="main">
 <div id="HEAD">
 	<center><h2>Hướng dẫn sử dụng mã thẻ Điện thoại Viettel</h2></center>
 </div>
 
 <div id="HEAD">
-	<h3>1. Thuê bao trả trước:</h3>
+	<h3 id="tratruoc">1. Thuê bao trả trước</h3>
 </div>
 
-<div>
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<h4>Bước 1:</h4>
-		<p>Giao dịch thành công, màn hình hiển thị mã thẻ và số seri.</p>
+		Giao dịch thành công, màn hình hiển thị mã thẻ và số seri.
 	</div>
 	<div class="column">
-		<h4>Bước 2:</h4>
-		<p>Chọn Nạp ngay:</p>
+		<img src="mt/mt-viettel1.PNG" alt="MTMB1" style="width:100%">
 	</div>
 </div>
 
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<img src="mt/mt-viettel1.PNG" alt="MTVT1" style="width:100%">
+		Chọn Nạp ngay:
 	</div>
 	<div class="column">
-		<img src="mt/mt-viettel2.PNG" alt="MTVT2" style="width:100%">
+		<img src="mt/mt-viettel2.PNG" alt="MTMB2" style="width:100%">
 	</div>
 </div>
 
+
+<div id="HEAD1">
+	<h4>Bước 3:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<h4>Bước 3:</h4>
-		<p>Chọn <b>Sao chép cú pháp nạp thẻ trả trước *100*mã thẻ#</b>:</p>
+		Chọn <b>Sao chép cú pháp nạp thẻ trả trước *100*mã thẻ#</b>
 	</div>
 	<div class="column">
-		<h4>Bước 4:</h4>
-		<p>Thực hiện gọi theo cú pháp như ảnh bên dưới:</p>
+		<img src="mt/mt-viettel3.PNG" alt="MTMB4" style="width:100%">
 	</div>
 </div>
 
+<div id="HEAD1">
+	<h4>Bước 4:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<img src="mt/mt-viettel3.PNG" alt="MTVT3" style="width:100%">
+		Thực hiện gọi theo cú pháp như ảnh bên dưới:
 	</div>
 	<div class="column">
-		<img src="mt/mt-viettel4.PNG" alt="MTVT4" style="width:100%">
+		<img src="mt/mt-viettel4.PNG" alt="MTMB4" style="width:100%">
 	</div>
-</div>
-
 </div>
  
 
 <div id="HEAD">
-	<h3>2. Thuê bao trả sau:</h3>
+	<h3 id="trasau">2. Thuê bao trả sau</h3>
 </div>
 
-<div>
-<div class="row">
-	<div class="column">
-		<h4>Bước 1:</h4>
-		<p>Chọn <b>Sao chép cú pháp nạp thẻ trả sau *199*mã thẻ#</b>:</p>
-	</div>
-	<div class="column">
-		<h4>Bước 2:</h4>
-		<p>Thực hiện gọi theo cú pháp:</p>
-	</div>
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
 </div>
-
 <div class="row">
+	<div class="column">
+		Chọn <b>Sao chép cú pháp nạp thẻ trả sau *199*mã thẻ#</b>
+	</div>
 	<div class="column">
 		<img src="mt/mt-viettel5.PNG" alt="MTVT5" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Thực hiện gọi theo cú pháp:
 	</div>
 	<div class="column">
 		<img src="mt/mt-viettel6.PNG" alt="MTVT6" style="width:100%">
 	</div>
 </div>
 
-</div>
 
 <div id="HEAD">
-	<h3>3. Gửi thông tin thẻ nạp cho người thân, bạn bè:</h3>
+	<h3 id="guithe">3. Gửi thông tin thẻ nạp cho người thân, bạn bè</h3>
 </div>
 
-<div>
-<div class="row">
-	<div class="column">
-		<h4>Bước 1:</h4>
-		<p>Chọn biểu tượng <b>Gửi thông tin thẻ nạp</b></p>
-	</div>
-	<div class="column">
-		<h4>Bước 2:</h4>
-		<p>Lựa chọn thao tác phù hợp theo nhu cầu của bạn</p>
-	</div>
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
 </div>
-
 <div class="row">
+	<div class="column">
+		Chọn biểu tượng <b>Gửi thông tin thẻ nạp</b>
+	</div>
 	<div class="column">
 		<img src="mt/mt-viettel7.PNG" alt="MTVT7" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Lựa chọn thao tác phù hợp theo nhu cầu của bạn
 	</div>
 	<div class="column">
 		<img src="mt/mt-viettel8.PNG" alt="MTVT8" style="width:100%">
 	</div>
 </div>
 
-</div>
-
 <div id="HEAD">
-	<h3>4. Sao chép thông tin thẻ nạp:</h3>
+	<h3 id="copy">4. Sao chép thông tin thẻ nạp</h3>
 </div>
 	
-<div>
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<h4>Bước 1:</h4>
-		<p>Chọn biểu tượng <b>Sao chép</b></p>
+		Chọn biểu tượng <b>Sao chép</b>
 	</div>
 	<div class="column">
-		<h4>Bước 2:</h4>
-		<p>Lựa chọn thao tác phù hợp theo nhu cầu của bạn</p>
+		<img src="mt/mt-viettel9.PNG" alt="MTVT9" style="width:100%">
 	</div>
 </div>
 
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
 <div class="row">
 	<div class="column">
-		<img src="mt/mt-viettel9.PNG" alt="MTVT9" style="width:100%">
+		Lựa chọn thao tác phù hợp theo nhu cầu của bạn
 	</div>
 	<div class="column">
 		<img src="mt/mt-viettel10.PNG" alt="MTVT10" style="width:100%">
