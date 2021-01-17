@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#HEAD {
+  color: #FF69B4;
+}
+
+#HEAD1 {
+  color: #DC143C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#navbar {
+  background-color: #FF69B4;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+		<a href="#tratruoc">1. Hướng dẫn nạp thẻ Data</a>
+		<a href="#note">2. Lưu ý quan trọng</a>
+		<a href="#guithe">3. Gửi thông tin thẻ nạp</a>
+		<a href="#copy">4. Sao chép thông tin thẻ nạp</a>
+</div>
+
+<div>
+<div id="HEAD">
+	<center><h2 style="padding-top: -70px; margin-top: 70px;">Hướng dẫn sử dụng mã thẻ Data Viettel</h2></center>
+</div>
+
+<div id="HEAD1">
+	<h4>Lưu ý: Dịch vụ Mua mã thẻ Data và Nạp Data trên MoMo hiện nay chỉ áp dụng cho thuê bao trả trước.</h4>
+</div>
+
+<div id="HEAD">
+	<h3 style="padding-top: 70px; margin-top: -70px;" id="tratruoc">1. Hướng dẫn nạp thẻ Data</h3>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Giao dịch thành công, màn hình hiển thị mã thẻ và số seri.
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel1.webp" alt="DTVT1" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Chọn Nạp ngay:
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel2.webp" alt="DTVT2" style="width:100%">
+	</div>
+</div>
+
+
+<div id="HEAD1">
+	<h4>Bước 3:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Thực hiện gọi theo Cú pháp <b>*191*68*mã thẻ#</b>
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel3.webp" alt="DTVT3" style="width:100%">
+	</div>
+</div>
+
+
+<div id="HEAD">
+	<h3 style="padding-top: 70px; margin-top: -70px;" id="note">2. Lưu ý quan trọng</h3>
+</div>
+
+<div id="HEAD1">
+	<h4>Thông tin cần nắm:</h4>
+</div>
+
+<ul>
+	<li>Vui lòng <b>không sử dụng cú pháp nạp tiền điện thoại *100*mã thẻ# để nạp mã thẻ data</b></li>
+	<li>Trong trường mã thẻ data không sử dụng được, bạn vui lòng liên hệ:
+		<ul>
+			<li>Liên hệ tổng đài theo số 1900 54 54 41 (Phí: 1.000đ/phút)</li>
+			<li>Gửi yêu cầu đến email hotro@momo.vn</li>
+			<li>Gửi yêu cầu hỗ trợ bằng tính năng trợ giúp như <b><a href="https://momo.vn/huong-dan/huong-dan-gui-yeu-cau-ho-tro-bang-tinh-nang-tro-giup">Hướng dẫn tại đây</a></b> </li>
+		</ul>
+	</li>
+</ul>
+
+<div id="HEAD1">
+	<h4>Lưu ý về dung lượng Data và chu kỳ:</h4>
+</div>
+<ul>
+	<li>Dung lượng gói Data khi nạp từ mã thẻ chỉ sử dụng trong chu kỳ đăng ký, không sử dụng cộng dồn hoặc bảo lưu.</li>
+	<li>Bạn không thể hủy dung lượng và chu kỳ mã thẻ Data sau khi nạp</li>
+	<li>Dung lượng từ mã thẻ Data sẽ tồn tại độc lập với các gói Combo Viettel như V30X, V50C,...</li>
+	<li>Mã thẻ Viettel được chia theo các chu kỳ:
+		<ul>
+			<li>Chu kỳ Ngày (dưới 7 ngày)</li>
+			<li>Chu kỳ Tuần (từ 7 đến dưới 30 ngày)</li>
+			<li>Chu kỳ Tháng (từ 30 ngày trở lên)</li>
+		</ul>
+	</li>
+	<li><b>Đối với các mã thẻ cùng chu kỳ</b>: Nếu bạn đã nạp mã thẻ Data A, khi thực hiện nạp mã thẻ Data B sẽ thay thế toàn bộ dung lượng và thời gian sử dụng của mã thẻ Data A được đăng ký trước đó.</li>
+	<li><b>Đối với các mã thẻ khác chu kỳ</b>: Dung lượng và thời gian của các mã thẻ sau khi kích hoạt sẽ tồn tại độc lập với nhau.</li>
+</ul>
+
+<div id="HEAD1">
+	<h4>Cú pháp kiểm tra dung lượng:</h4>
+</div>
+<p><center><b>KTTK</b> gửi <b>191</b>.</center></p>
+
+<div id="HEAD">
+	<h3 style="padding-top: 70px; margin-top: -70px;" id="guithe">3. Gửi thông tin thẻ nạp cho người thân, bạn bè</h3>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Chọn biểu tượng <b>Gửi thông tin thẻ nạp</b>
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel4.webp" alt="DTVT4" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Lựa chọn thao tác phù hợp theo nhu cầu của bạn
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel5.webp" alt="DTVT5" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD">
+	<h3 style="padding-top: 70px; margin-top: -70px;" id="copy">4. Sao chép thông tin thẻ nạp</h3>
+</div>
+	
+<div id="HEAD1">
+	<h4>Bước 1:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Chọn biểu tượng <b>Sao chép</b>
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel6.webp" alt="DTVT6" style="width:100%">
+	</div>
+</div>
+
+<div id="HEAD1">
+	<h4>Bước 2:</h4>
+</div>
+<div class="row">
+	<div class="column">
+		Lựa chọn thao tác phù hợp theo nhu cầu của bạn
+	</div>
+	<div class="column">
+		<img src="mt/dt-viettel7.webp" alt="DTVT7" style="width:100%">
+	</div>
+</div>
+
+</div>
+
+
+</body>
+</html>
