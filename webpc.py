@@ -9,25 +9,25 @@ def convert_image(image_path, image_type):
     im = Image.open(image_path)
     # 2. Converting the image to RGB colour:
     im = im.convert('RGB')
-    # 3. Spliting the image path (to avoid the .jpg or .webp being part of the image name):
+    # 3. Spliting the image path (to avoid the .jpg or .jpg being part of the image name):
     image_name = image_path.split('.')[0]
     print(f"This is the image name: {image_name}")
 
     # Saving the images based upon their specific type:
-    if image_type == 'jpg' or image_type == 'webp':
-        im.save(f"{image_name}.webp", 'webp')
+    if image_type == 'jpg' or image_type == 'jpg':
+        im.save(f"{image_name}.jpg", 'jpg')
     else:
-        # Raising an error if we didn't get a jpeg or webp file type!
+        # Raising an error if we didn't get a jpeg or jpg file type!
         raise Error
 
 files = os.listdir() # We list all of the files and folders using os.listdir()
 
-images = [file for file in files if file.endswith(('jpg', 'webp'))]
+images = [file for file in files if file.endswith(('jpg', 'jpg'))]
 
 for image in images:
     if image.endswith('jpg'):
         convert_image(image, image_type='jpg')
-    elif image.endswith('webp'):
-        convert_image(image, image_type='webp')
+    elif image.endswith('jpg'):
+        convert_image(image, image_type='jpg')
     else:
         raise Error
