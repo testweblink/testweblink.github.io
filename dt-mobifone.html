@@ -65,30 +65,15 @@ body {
 <body>
 
 <div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.7.0/tocbot.css" integrity="sha256-XUbSD3m+xLW27W/mp9kMn+fI9AU2MoBkiMMSVVYWI+o=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.7.0/tocbot.min.js" integrity="sha256-5K/04vUxP94HmQ8f18TgufdyqE69WDJRMNga0JLhAtE=" crossorigin="anonymous"></script>
-
-<div class="toc-container mb-2">
-    <p class="name">Mục lục</p>
-    <div class="toc py-2 pr-2 mb-2"></div>
-</div>
-
-<script>
-    // Show TOC if the article contains any heading.
-    if ($("article h3").length == 0) {
-        $(".toc-container").addClass("d-none");
-    }
-
-    tocbot.init({
-        // Where to render the table of contents.
-        tocSelector: ".toc",
-        // Where to grab the headings to build the table of contents.
-        contentSelector: "article",
-        // Which headings to grab inside of the contentSelector element.
-        headingSelector: "h3",
-        collapseDepth: 6,
-    });
-</script>
+	<div id="HEAD1">
+		<p>Mục lục</p>
+	</div>
+	<ul>
+		<li><a href="#tratruoc">1. Hướng dẫn nạp thẻ Data</a></li>
+		<li><a href="#note">2. Lưu ý quan trọng</a></li>
+		<li><a href="#guithe">3. Gửi thông tin thẻ nạp</a></li>
+		<li><a href="#copy">4. Sao chép thông tin thẻ nạp</a></li>
+	</ul>
 </div>
 
 <div>
